@@ -1,32 +1,35 @@
 openapi: 3.0.4
 info:
   title: Domain Expiration
-  description: Domain Expiration Checker is a simple tool for checking the expiration date and age of a domain. It returns the expiration date and age of the domain provided.
+  description: >-
+    Domain Expiration Checker is a simple tool for checking the expiration date
+    and age of a domain. It returns the expiration date and age of the domain
+    provided.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/domainexpiration:
     get:
       summary: Check Domain Expiration
-      description: Domain Expiration Checker is a simple tool for checking the expiration date and age of a domain. It returns the expiration date and age of the domain provided.
+      description: Check the expiration date of a domain
       operationId: domainexpiration
       parameters:
-      - name: domain
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The domain to check the expiration date of
-        example: myspace.com
+        - name: domain
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The domain to check the expiration date of
+          example: myspace.com
       responses:
         '200':
           description: Successful Response
@@ -42,25 +45,25 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   domain: myspace.com
-                  expirationDate: 2029-02-23T05:00:00.0000000Z
-                  daysToExpiration: 1463
-                  createdDate: 1996-02-22T05:00:00.0000000Z
-                  lastUpdatedDate: 2023-01-17T00:16:21.0000000Z
-                  daysSinceLastUpdate: 765
-                  domainAgeDays: 10591
+                  expirationDate: '2029-02-23T05:00:00Z'
+                  daysToExpiration: 1164
+                  createdDate: '1996-02-22T05:00:00Z'
+                  lastUpdatedDate: '2023-01-17T00:16:21Z'
+                  daysSinceLastUpdate: 1064
+                  domainAgeDays: 10890
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -68,4 +71,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
