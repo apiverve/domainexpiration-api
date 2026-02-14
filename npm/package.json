@@ -1,9 +1,18 @@
 {
   "name": "@apiverve/domainexpiration",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "Domain Expiration Checker is a simple tool for checking the expiration date and age of a domain. It returns the expiration date and age of the domain provided.",
   "main": "index.js",
   "types": "index.d.ts",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "mocha",
     "example": "node examples/basic.js"
@@ -14,14 +23,18 @@
     "directory": "npm"
   },
   "keywords": [
-    "domain expiration checker", "domain expiration checker api", "domain expiration checker tool", "domain expiration checker software", "domain expiration checker service"
+    ""
   ],
-  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "author": {
+    "name": "APIVerve",
+    "email": "hello@apiverve.com",
+    "url": "https://apiverve.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/apiverve/domainexpiration-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/domainexpiration?utm_source=npm",
+  "homepage": "https://domainexpiration.apiverve.com?utm_source=npm&utm_medium=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
