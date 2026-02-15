@@ -12,7 +12,6 @@ namespace APIVerve.API.DomainExpiration
     {
         /// <summary>
         /// The domain to check the expiration date of
-        /// Example: myspace.com
         /// </summary>
         [JsonProperty("domain")]
         public string Domain { get; set; }
