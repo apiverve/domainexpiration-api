@@ -1,1 +1,3 @@
-from .apiClient import DomainexpirationAPIClient
+from .apiClient import DomainexpirationAPIClient, DomainexpirationAPIClientError
+
+__all__ = ['DomainexpirationAPIClient', 'DomainexpirationAPIClientError']
