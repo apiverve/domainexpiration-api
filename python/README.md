@@ -222,8 +222,9 @@ from apiverve_domainexpiration.apiClient import DomainexpirationAPIClient
 
 api = DomainexpirationAPIClient("[YOUR_API_KEY]")
 
+query = { "domain": "myspace.com" }
+
 try:
-    query = { "domain": "myspace.com" }
     result = api.execute(query)
     print(result)
 finally:
