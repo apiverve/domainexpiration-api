@@ -124,11 +124,13 @@ async function makeRequest() {
   "data": {
     "domain": "myspace.com",
     "expirationDate": "2029-02-23T05:00:00Z",
-    "daysToExpiration": 1463,
+    "daysToExpiration": 1164,
+    "expirationStatus": "healthy",
     "createdDate": "1996-02-22T05:00:00Z",
     "lastUpdatedDate": "2023-01-17T00:16:21Z",
-    "daysSinceLastUpdate": 765,
-    "domainAgeDays": 10591
+    "daysSinceLastUpdate": 1064,
+    "domainAgeDays": 10890,
+    "domainAgeYears": 29.8
   }
 }
 ```
