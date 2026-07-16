@@ -25,6 +25,9 @@ namespace APIVerve.API.DomainExpiration
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,21 +36,39 @@ namespace APIVerve.API.DomainExpiration
         public string Domain { get; set; }
 
         [JsonProperty("expirationDate")]
-        public DateTimeOffset ExpirationDate { get; set; }
+        public DateTimeOffset? ExpirationDate { get; set; }
 
         [JsonProperty("daysToExpiration")]
-        public long DaysToExpiration { get; set; }
+        public long? DaysToExpiration { get; set; }
+
+        [JsonProperty("expirationStatus")]
+        public string ExpirationStatus { get; set; }
 
         [JsonProperty("createdDate")]
-        public DateTimeOffset CreatedDate { get; set; }
+        public DateTimeOffset? CreatedDate { get; set; }
 
         [JsonProperty("lastUpdatedDate")]
-        public DateTimeOffset LastUpdatedDate { get; set; }
+        public DateTimeOffset? LastUpdatedDate { get; set; }
 
         [JsonProperty("daysSinceLastUpdate")]
-        public long DaysSinceLastUpdate { get; set; }
+        public long? DaysSinceLastUpdate { get; set; }
 
         [JsonProperty("domainAgeDays")]
-        public long DomainAgeDays { get; set; }
+        public long? DomainAgeDays { get; set; }
+
+        [JsonProperty("domainAgeYears")]
+        public double? DomainAgeYears { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
