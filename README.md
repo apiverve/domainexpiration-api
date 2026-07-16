@@ -191,11 +191,36 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Domain Expiration API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "domain": "myspace.com",
+    "expirationDate": "2029-02-23T05:00:00Z",
+    "daysToExpiration": 1164,
+    "expirationStatus": "healthy",
+    "createdDate": "1996-02-22T05:00:00Z",
+    "lastUpdatedDate": "2023-01-17T00:16:21Z",
+    "daysSinceLastUpdate": 1064,
+    "domainAgeDays": 10890,
+    "domainAgeYears": 29.8
+  }
 }
 ```
 
