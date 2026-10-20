@@ -1,13 +1,12 @@
 Domain Expiration API
 ============
 
-Domain Expiration Checker is a simple tool for checking the expiration date and age of a domain. It returns the expiration date and age of the domain provided.
+Domain Expiration tracks domain expiration health and domain age for any web address. It returns days remaining until expiry, an expiration status, and age in days and years, with paid plans adding exact registration timestamps.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Domain Expiration API](https://domainexpiration.apiverve.com?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-domainexpiration.svg)](https://pypi.org/project/apiverve-domainexpiration/)
+
+This is a Python wrapper for the [Domain Expiration API](https://apiverve.com/marketplace/domainexpiration?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-domainexpiration
 
 ## Configuration
 
-Before using the domainexpiration API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Domain Expiration API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The Domain Expiration API documentation is found here: [https://docs.apiverve.com/ref/domainexpiration](https://docs.apiverve.com/ref/domainexpiration?utm_source=pypi&utm_medium=readme).
+The Domain Expiration API documentation is found here: [https://docs.apiverve.com/ref/domainexpiration](https://docs.apiverve.com/ref/domainexpiration?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -104,11 +103,13 @@ print(result)
   "data": {
     "domain": "myspace.com",
     "expirationDate": "2029-02-23T05:00:00Z",
-    "daysToExpiration": 1463,
+    "daysToExpiration": 1164,
+    "expirationStatus": "healthy",
     "createdDate": "1996-02-22T05:00:00Z",
     "lastUpdatedDate": "2023-01-17T00:16:21Z",
-    "daysSinceLastUpdate": 765,
-    "domainAgeDays": 10591
+    "daysSinceLastUpdate": 1064,
+    "domainAgeDays": 10890,
+    "domainAgeYears": 29.8
   }
 }
 ```
@@ -236,7 +237,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -247,12 +248,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 

@@ -10,14 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_domainexpiration',
-    version='1.1.14',
+    version='1.2.2',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
-    description='Domain Expiration Checker is a simple tool for checking the expiration date and age of a domain. It returns the expiration date and age of the domain provided.',
+    description='Domain Expiration tracks domain expiration health and domain age for any web address. It returns days remaining until expiry, an expiration status, and age in days and years, with paid plans adding exact registration timestamps.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://domainexpiration.apiverve.com?utm_source=pypi&utm_medium=homepage',
+    url='https://apiverve.com/marketplace/domainexpiration?utm_source=pypi&utm_medium=referral&utm_content=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
