@@ -2,9 +2,9 @@ openapi: 3.0.4
 info:
   title: Domain Expiration
   description: >-
-    Domain Expiration Checker is a simple tool for checking the expiration date
-    and age of a domain. It returns the expiration date and age of the domain
-    provided.
+    Domain Expiration tracks domain expiration health and domain age for any web
+    address. It returns days remaining until expiry, an expiration status, and
+    age in days and years, with paid plans adding exact registration timestamps.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/domainexpiration:
     get:
-      summary: Check Domain Expiration
+      summary: Domain Expiration
       description: Check the expiration date of a domain
       operationId: domainexpiration
       parameters:

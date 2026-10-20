@@ -1,13 +1,13 @@
-# [Domain Expiration API](https://domainexpiration.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Domain Expiration API](https://apiverve.com/marketplace/domainexpiration?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Domain Expiration Checker is a simple tool for checking the expiration date and age of a domain. It returns the expiration date and age of the domain provided.
+Domain Expiration tracks domain expiration health and domain age for any web address. It returns days remaining until expiry, an expiration status, and age in days and years, with paid plans adding exact registration timestamps.
 
 The Domain Expiration API provides a simple, reliable way to integrate domain expiration functionality into your applications. Built for developers who need production-ready domain expiration capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://domainexpiration.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/domainexpiration?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://domainexpiration.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/domainexpiration?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/domainexpiration-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Domain Expiration API](https://domainexpiration.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Domain Expiration API](https://apiverve.com/marketplace/domainexpiration?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/domainexpiration](https://docs.apiverve.com/ref/domainexpiration)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -228,7 +228,7 @@ A real response from the Domain Expiration API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Domain Expiration API](https://domainexpiration.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Domain Expiration API](https://apiverve.com/marketplace/domainexpiration?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
