@@ -1,7 +1,7 @@
 {
     "name": "apiverve/domainexpiration",
-    "description": "Domain Expiration Checker is a simple tool for checking the expiration date and age of a domain. It returns the expiration date and age of the domain provided.",
-    "version": "1.2.0",
+    "description": "Domain Expiration tracks domain expiration health and domain age for any web address. It returns days remaining until expiry, an expiration status, and age in days and years, with paid plans adding exact registration timestamps.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "domainexpiration",
-        "domain expiration checker",
-        "domain expiration checker api",
-        "domain expiration checker tool",
-        "domain expiration checker software",
-        "domain expiration checker service"
+        "domain expiration api",
+        "domain expiration lookup",
+        "domain expiration monitoring",
+        "domain expiry checker",
+        "domain renewal api"
     ],
-    "homepage": "https://domainexpiration.apiverve.com?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/domainexpiration?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/domainexpiration",
