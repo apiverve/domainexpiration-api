@@ -1,7 +1,7 @@
 Domain Expiration API
 ============
 
-Domain Expiration tracks domain expiration health and domain age for any web address. It returns days remaining until expiry, an expiration status, and age in days and years, with paid plans adding exact registration timestamps.
+Domain Expiration is a domain expiration checker API. Pass any domain and it reads the registry record over RDAP or WHOIS to return the days left until the domain expires, an expiration status from healthy to expired, and its age in days and years, with paid plans adding exact registration timestamps.
 
 
 [![PyPI version](https://img.shields.io/pypi/v/apiverve-domainexpiration.svg)](https://pypi.org/project/apiverve-domainexpiration/)
