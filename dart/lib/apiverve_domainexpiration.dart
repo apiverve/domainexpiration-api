@@ -1,8 +1,8 @@
 /// Domain Expiration API client for Dart/Flutter
 ///
-/// Domain Expiration Checker is a simple tool for checking the expiration date and age of a domain. It returns the expiration date and age of the domain provided.
+/// Domain Expiration is a domain expiration checker API. Pass any domain and it reads the registry record over RDAP or WHOIS to return the days left until the domain expires, an expiration status from healthy to expired, and its age in days and years, with paid plans adding exact registration timestamps.
 ///
-/// For more information, visit: https://domainexpiration.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/domainexpiration?utm_source=dart&utm_medium=referral&utm_content=readme
 library apiverve_domainexpiration;
 
 export 'src/client.dart';

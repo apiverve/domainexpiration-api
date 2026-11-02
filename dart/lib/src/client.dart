@@ -46,10 +46,10 @@ final _formatPatterns = {
 
 /// Domain Expiration API client.
 ///
-/// For more information, visit: https://domainexpiration.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/domainexpiration?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [domain] (required) - The domain to check the expiration date of [format: date]
+/// * [domain] (required) - The domain to check the expiration date of [format: domain]
 class DomainexpirationClient {
   final String apiKey;
   final String baseUrl;
@@ -57,7 +57,7 @@ class DomainexpirationClient {
 
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
-    'domain': ValidationRule(type: 'string', required: true, format: 'date'),
+    'domain': ValidationRule(type: 'string', required: true, format: 'domain'),
   };
 
   DomainexpirationClient(this.apiKey, {
