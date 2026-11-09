@@ -1,6 +1,6 @@
 name: apiverve_domainexpiration
 description: "Domain Expiration is a domain expiration checker API. Pass any domain and it reads the registry record over RDAP or WHOIS to return the days left until the domain expires, an expiration status from healthy to expired, and its age in days and years, with paid plans adding exact registration timestamps."
-version: 1.2.4
+version: 1.2.5
 homepage: https://apiverve.com/marketplace/domainexpiration?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/domainexpiration-api/tree/main/dart
 
